@@ -21,8 +21,7 @@ void TakeInput() {
 
 	printf("The cost list is : ");
 
-	for( i=0;i < n;i++)
-	{
+	for( i=0;i < n;i++) {
 		printf("\n");
 
 		for(j=0;j < n;j++)
@@ -50,8 +49,7 @@ int Least(int c) {
 	return nc;
 }
 
-void MinCost(int city)
-{
+void MinCost(int city) {
 	int i,ncity;
 
 	completed[city]=1;
@@ -59,8 +57,7 @@ void MinCost(int city)
 	printf("%d--->",city+1);
 	ncity=Least(city);
 
-	if(ncity==999)
-	{
+	if(ncity==999) {
 		ncity=0;
 		printf("%d",ncity+1);
 		cost+=ary[city][ncity];
