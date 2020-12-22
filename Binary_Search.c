@@ -1,5 +1,21 @@
 #include <stdio.h>
 
+int BinarySearch(int arr[], int low, int high, int search) {
+  if (low > high) {
+        return -1;
+    }
+    int mid = (low + high) / 2;
+    if (search == arr[mid]) {
+        return mid;
+    }
+    else if (search < arr[mid]) {
+        return BinarySearch(arr, low,  mid - 1, search);
+    }
+    else {
+        return BinarySearch(arr, mid + 1,  high, search);
+    }
+}
+
 int main() {
   int c, first, last, middle, n, search, array[100];
 
@@ -13,20 +29,8 @@ int main() {
   printf("Enter value to find : ");
   scanf("%d", &search);
 
-  first = 0;
-  last = n - 1;
-  middle = (first+last)/2;
-
-  while (first <= last) {
-    if (array[middle] < search) { first = middle + 1; }
-    else if (array[middle] == search) {
-      printf("%d found at location %d.\n", search, middle+1);
-      break;
-    }
-    else { last = middle - 1; }
-    middle = (first + last)/2;
-  }
-  if (first > last) { printf("Not found! %d isn't present in the list.\n", search); }
-
-  return 0;
+  int location = BinarySearch(array, 0, n, search);
+  location == -1? 
+    printf("Not found! %d isn't present in the list.\n", search):
+    printf("%d found at location %d.\n", search, location);
 }
