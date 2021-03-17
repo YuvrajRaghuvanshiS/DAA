@@ -19,8 +19,7 @@ int Partition(int arr[], int low, int high) {
     return (i + 1);
 }
 
-void QuickSort(int arr[], int low, int high)
-{
+void QuickSort(int arr[], int low, int high) {
     if (low < high) {
         int q = Partition(arr, low, high);
 
@@ -29,8 +28,7 @@ void QuickSort(int arr[], int low, int high)
     }
 }
 
-int main()
-{
+int main() {
     int arr[100], n;
     printf("Enter number of elements : ");
     scanf("%d", &n);

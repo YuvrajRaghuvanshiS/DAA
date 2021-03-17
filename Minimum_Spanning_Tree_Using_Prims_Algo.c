@@ -70,10 +70,10 @@ int Prims() {
 
 int main() {
 	int i,j,total_cost;
-	printf("Enter no. of vertices. : ");
+	printf("Enter no. of vertices : ");
 	scanf("%d",&n);
 	
-	printf("\nEnter the adjacency matrix. : \n");
+	printf("\nEnter the adjacency matrix : \n");
 	
 	for(i=0;i<n;i++) {
 		for(j=0;j<n;j++) {
@@ -82,7 +82,7 @@ int main() {
     }
 	
 	total_cost=Prims();
-	printf("\nSpanning tree matrix. : \n");
+	printf("\nSpanning tree matrix : \n");
 	
 	for(i=0;i<n;i++) {
 		printf("\n");

@@ -20,11 +20,11 @@ void knapsack(int n, float weight[], float profit[], float capacity) {
 
    tp = tp + (x[i] * profit[i]);
 
-   printf("he result vector is : ");
+   printf("The result vector is : ");
    for (i = 0; i < n; i++)
       printf("%f\t", x[i]);
 
-   printf("Maximum profit is : %f", tp);
+   printf("Maximum profit is : %f.", tp);
 
 }
 
@@ -33,15 +33,15 @@ int main() {
    int num, i, j;
    float ratio[20], temp;
 
-   printf("Enter the no. of objects : ");
+   printf("Enter the number of objects : ");
    scanf("%d", &num);
 
-   printf("Enter the wts and profits of each object : ");
+   printf("Enter the weights and profits of each object : ");
    for (i = 0; i < num; i++) {
       scanf("%f %f", &weight[i], &profit[i]);
    }
 
-   printf("Enter the capacityacity of knapsack : ");
+   printf("Enter the capacity of knapsack : ");
    scanf("%f", &capacity);
 
    for (i = 0; i < num; i++) { ratio[i] = profit[i] / weight[i]; }

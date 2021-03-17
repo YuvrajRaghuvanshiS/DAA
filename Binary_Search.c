@@ -22,7 +22,7 @@ int main() {
   printf("Enter number of elements : ");
   scanf("%d", &n);
 
-  printf("Enter %d integers in sorted order. : ", n);
+  printf("Enter %d integers in sorted order : ", n);
 
   for (c = 0; c < n; c++) { scanf("%d", &array[c]); }
 

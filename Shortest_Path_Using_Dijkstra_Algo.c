@@ -66,9 +66,9 @@ void Dijkstra(int graph[MAX][MAX],int n,int startnode) {
 
 int main() {
 	int graph[MAX][MAX],i,j,n,u;
-	printf("Enter no. of vertices. : ");
+	printf("Enter no. of vertices : ");
 	scanf("%d",&n);
-	printf("\nEnter the adjacency matrix. : \n");
+	printf("\nEnter the adjacency matrix : \n");
 	
 	for(i=0;i<n;i++) {
 		for(j=0;j<n;j++) {
@@ -76,7 +76,7 @@ int main() {
         }
     }
 
-	printf("\nEnter the starting node. : ");
+	printf("\nEnter the starting node : ");
 	scanf("%d",&u);
 	Dijkstra(graph,n,u);
 	

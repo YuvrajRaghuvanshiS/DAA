@@ -73,12 +73,10 @@ void Kruskal() {
 	}
 }
 
-void Print()
-{
+void Print() {
 	int i,cost=0;
 	
-	for(i=0;i<spanlist.n;i++)
-	{
+	for(i=0;i<spanlist.n;i++) {
 		printf("\n%d\t%d\t%d",spanlist.edges[i].destination,spanlist.edges[i].source,spanlist.edges[i].weight);
 		cost=cost+spanlist.edges[i].weight;
 	}
@@ -88,11 +86,11 @@ void Print()
 
 int main() {
 	
-	printf("\nEnter number of vertices. : ");
+	printf("\nEnter number of vertices : ");
 	
 	scanf("%d",&n);
 	
-	printf("\nEnter the adjacency matrix. : \n");
+	printf("\nEnter the adjacency matrix : \n");
 	
 	for(int i=0;i<n;i++)
 		for(int j=0;j<n;j++)
